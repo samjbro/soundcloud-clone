@@ -1,0 +1,16 @@
+.signIn {
+  background-color: #f50;
+}
+
+.createAcc {
+  background-color: transparent;
+  border: solid 0.1rem #fff;
+}
+
+.creators {
+  background-color: transparent;
+}
+
+.upload {
+  height: 4rem;
+}

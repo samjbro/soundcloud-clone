@@ -1,12 +1,13 @@
 import React from "react";
-import { Router } from "@reach/router";
-import Home from "./components/Home";
+import Hero from "./components/Hero";
+import SearchBar from "./components/SearchBar";
 
 function App() {
   return (
-    <Router>
-      <Home path="/" />
-    </Router>
+    <div className="hero__container">
+      <Hero />
+      <SearchBar />
+    </div>
   );
 }
 
