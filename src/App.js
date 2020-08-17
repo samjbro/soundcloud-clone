@@ -1,10 +1,12 @@
 import React from "react";
+import { Router } from "@reach/router";
+import Home from "./components/Home";
 
 function App() {
   return (
-    <div>
-      <h1>Hello World!</h1>
-    </div>
+    <Router>
+      <Home path="/" />
+    </Router>
   );
 }
 
