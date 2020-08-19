@@ -1,16 +1,35 @@
-.signIn {
+button {
+  font-size: 1.4rem;
+  font-weight: 100;
+  color: #fff;
+  border: none;
+  background-color: #f50;
+  border-radius: 0.4rem;
+  outline: none;
+  line-height: 2.4rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", "Geneva", "Verdana", sans-serif;
+}
+.orange {
   background-color: #f50;
 }
 
-.createAcc {
+.transparent {
   background-color: transparent;
+}
+
+.whiteBorder {
   border: solid 0.1rem #fff;
 }
-
-.creators {
-  background-color: transparent;
+.noBorder {
+  border: none;
+}
+.medium {
+  height: 3rem;
+  padding: 0.2rem 1.6rem;
 }
 
-.upload {
-  height: 4rem;
+.big {
+  height: 4.4rem;
+  padding: 0 2.6rem;
 }

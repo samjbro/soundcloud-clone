@@ -5,9 +5,15 @@ import styles from "./SignIn.module.css";
 const SignIn = () => {
   return (
     <div className={styles.signIn}>
-      <Button styleName={"signIn"}>Sign in</Button>
-      <Button styleName={"createAcc"}>Create account</Button>
-      <Button styleName={"creators"}>For Creators</Button>
+      <Button bgColor={"transparent"} border={"whiteBorder"} size={"medium"}>
+        Sign in
+      </Button>
+      <Button bgColor={"orange"} border={"noBorder"} size={"medium"}>
+        Create account
+      </Button>
+      <Button bgColor={"transparent"} border={"noBorder"} size={"medium"}>
+        For Creators
+      </Button>
     </div>
   );
 };

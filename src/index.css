@@ -29,24 +29,7 @@ a {
   color: #fff;
   text-decoration: none;
 }
-button {
-  font-size: 1.4rem;
-  font-weight: 100;
-  color: #fff;
-  border: none;
-  padding: 0.2rem 1.6rem;
-  background-color: #f50;
-  border-radius: 0.4rem;
-  outline: none;
-  height: 3rem;
-  line-height: 2.4rem;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", "Geneva", "Verdana", sans-serif;
-}
 
-button:hover {
-  cursor: pointer;
-}
 .hero__container {
   width: 1080px;
   margin: auto;
@@ -70,23 +53,4 @@ input[type="submit"] {
   margin-left: -50px;
   height: 20px;
   width: 50px;
-}
-.createAcc {
-  background-color: #f50;
-}
-
-.signIn {
-  background-color: transparent;
-  border: solid 0.1rem #fff;
-  margin-right: 1rem;
-}
-
-.creators {
-  background-color: transparent;
-  padding-left: 1rem;
-}
-
-.upload {
-  height: 4.4rem;
-  padding: 0 2.6rem;
 }
