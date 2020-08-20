@@ -1,10 +1,23 @@
 import React from "react";
 import styles from "./Button.module.css";
 
-const Button = ({ bgColor, border, size, children }) => {
+export const ButtonVariants = {
+  primary: 'primary',
+  secondary: 'secondary',
+  transparent: 'transparent' 
+}
+
+export const ButtonSizes = {
+  medium: 'medium',
+  large: 'large'
+}
+
+
+const Button = ({ variant = ButtonVariants.primary, size = ButtonSizes.medium, title, onClick }) => {
+  const buttonClasses = [styles.button, styles[variant], styles[size]].join(" ")
   return (
-    <button className={`${styles[bgColor]} ${styles[border]} ${styles[size]}`}>
-      {children}
+    <button onClick={onClick} className={buttonClasses}>
+      {title}
     </button>
   );
 };

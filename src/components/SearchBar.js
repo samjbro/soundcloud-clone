@@ -1,6 +1,6 @@
 import React from "react";
 import SearchBox from "./SearchBox";
-import Button from "./Button";
+import Button, { ButtonSizes } from "./Button";
 import styles from "./SearchBar.module.css";
 
 const SearchBar = () => {
@@ -8,9 +8,7 @@ const SearchBar = () => {
     <div className={styles.searchBar}>
       <SearchBox />
       <div>or</div>
-      <Button color={"orange"} border={"noBorder"} size={"big"}>
-        Upload your own
-      </Button>
+      <Button title="Upload your own" size={ButtonSizes.large} />
     </div>
   );
 };

@@ -1,19 +1,24 @@
 import React from "react";
-import Button from "./Button";
+import Button, { ButtonVariants } from "./Button";
 import styles from "./SignIn.module.css";
 
 const SignIn = () => {
   return (
     <div className={styles.signIn}>
-      <Button bgColor={"transparent"} border={"whiteBorder"} size={"medium"}>
-        Sign in
-      </Button>
-      <Button bgColor={"orange"} border={"noBorder"} size={"medium"}>
-        Create account
-      </Button>
-      <Button bgColor={"transparent"} border={"noBorder"} size={"medium"}>
-        For Creators
-      </Button>
+      <Button 
+        variant={ButtonVariants.secondary}
+        title="Sign in"
+        onClick={() => {}}
+      />
+      <Button 
+        title="Create account"
+        onClick={() => {}}
+      />
+      <Button 
+        variant={ButtonVariants.transparent}
+        title="For Creators"
+        onClick={() => {}}
+      />
     </div>
   );
 };
