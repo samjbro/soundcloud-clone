@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
 @font-face {
   font-family: "Lucida Sans";
   src: local("Lucida Sans"), url(./fonts/Lucida%20Sans.ttf) format("truetype");
@@ -13,6 +15,12 @@
   font-family: "Interstate";
   src: local("Interstate"),
     url(./fonts/Interstate-regular.ttf) format("truetype");
+}
+
+:root {
+  --primary: #f50;
+  --off-white: #f2f2f2;
+  --white: #fff;
 }
 
 html,
@@ -31,22 +39,32 @@ a {
 }
 
 .hero__container {
-  width: 1080px;
+  width: 1240px;
   margin: auto;
   display: flexbox;
   position: relative;
   background-color: #fff;
   height: 100vmin;
+  border-top: solid 4px #f50;
 }
 @media screen and (max-width: 1079px) {
   .hero__container {
     width: 960px;
   }
 }
+@media screen and (min-width: 1080px) {
+  .hero__container {
+    width: 1080px;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .hero__container {
+    width: 1240px;
+  }
+}
 
 .hero__container img {
   max-width: 100%;
-  border-top: solid 4px #f50;
 }
 
 input[type="submit"] {

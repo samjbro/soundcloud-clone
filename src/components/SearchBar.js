@@ -8,9 +8,14 @@ const SearchBar = () => {
     <div className={styles.searchBar}>
       <SearchBox />
       <div>or</div>
-      <Button color={"orange"} border={"noBorder"} size={"big"}>
-        Upload your own
-      </Button>
+      <Button
+        onClick={() => {
+          console.log("clicked");
+        }}
+        title="Upload your own"
+        variant="primary--solid"
+        size="large"
+      />
     </div>
   );
 };

@@ -19,6 +19,6 @@
   display: inline-block;
   height: 100%;
   width: 100%;
-  background: transparent url("./soundcloud-logo.png") no-repeat;
+  background: transparent url("../images/soundcloud-logo.png") no-repeat;
   background-size: 48px 22px;
 }

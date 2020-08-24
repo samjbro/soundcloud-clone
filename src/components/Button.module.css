@@ -1,35 +1,49 @@
 button {
   font-size: 1.4rem;
   font-weight: 100;
-  color: #fff;
   border: none;
-  background-color: #f50;
   border-radius: 0.4rem;
   outline: none;
   line-height: 2.4rem;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", "Geneva", "Verdana", sans-serif;
 }
-.orange {
-  background-color: #f50;
+button:hover {
+  cursor: pointer;
 }
 
-.transparent {
+.primary--solid {
+  background-color: var(--primary);
+  color: var(--off-white);
+}
+.secondary--solid {
   background-color: transparent;
+  color: var(--off-white);
 }
 
-.whiteBorder {
-  border: solid 0.1rem #fff;
+.secondary--outline {
+  background-color: transparent;
+  border: 2px solid var(--off-white);
+  color: var(--off-white);
 }
-.noBorder {
-  border: none;
+.secondary--outline:hover {
+  border: 2px solid var(--white);
+  color: var(--white);
+  border: 2px solid var(--white);
 }
+
+.no-padding {
+  height: 3rem;
+  padding: 0.2rem 0;
+}
+
 .medium {
   height: 3rem;
   padding: 0.2rem 1.6rem;
 }
 
-.big {
+.large {
   height: 4.4rem;
   padding: 0 2.6rem;
+  font-size: 1.6rem;
 }
