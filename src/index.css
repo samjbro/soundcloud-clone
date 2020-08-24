@@ -13,8 +13,7 @@
 
 @font-face {
   font-family: "Interstate";
-  src: local("Interstate"),
-    url(./fonts/Interstate-regular.ttf) format("truetype");
+  src: local("Interstate"), url(./fonts/Interstate-light.ttf) format("truetype");
 }
 
 :root {

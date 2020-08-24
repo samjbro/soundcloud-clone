@@ -1,0 +1,40 @@
+.container {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.trackList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+  font-family: "Interstate";
+  font-size: 1.6rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+.track {
+  width: 15%;
+}
+.trackItem {
+  position: relative;
+}
+.title {
+  font-family: "Interstate";
+  font-size: 2.6rem;
+  color: #666;
+  margin-bottom: 4rem;
+}
+.user {
+  margin-bottom: 2rem;
+}
+.playButton {
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: #f50;
+}
