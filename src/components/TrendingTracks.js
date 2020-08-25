@@ -2,37 +2,21 @@ import React, { useState } from "react";
 import Button from "./Button";
 import styles from "./TrendingTracks.module.css";
 
-const data = {
-  cover: "/images/trending.jpg",
-  title: "title",
-  user: "Name",
-};
-
-const arr = Array(12).fill(data);
-
-const renderTracks = () => {
-  const tracks = arr.map((track, i) => {
-    return (
-      <div className={styles.track}>
-        <div className={styles.trackItem}>
-          <img src={track.cover} />
-          <div className={styles.playButton}></div>
-        </div>
-        <div>{track.title}</div>
-        <div className={styles.user}>{track.user}</div>
-      </div>
-    );
-  });
-  return tracks;
-};
-
 const TrendingTracks = () => {
+  const [hovered, setHovered] = useState(false);
+
+  const handleHover = (e) => {
+    e.type === "mouseenter"
+      ? setHovered(e.target.getAttribute("data-img"))
+      : setHovered(false);
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.title}>
         Hear what’s trending for free in the SoundCloud community
       </div>
-      <div className={styles.trackList}>{renderTracks()}</div>
+      <div className={styles.trackList}></div>
       <div>
         <Button
           onClick={() => {
