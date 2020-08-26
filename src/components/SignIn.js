@@ -1,30 +1,21 @@
 import React from "react";
-import Button from "./Button";
+import Button, { ButtonVariants, ButtonSizes } from "./Button";
 import styles from "./SignIn.module.css";
 
 const SignIn = () => {
   return (
     <div className={styles.signIn}>
       <Button
-        onClick={() => {
-          console.log("clicked");
-        }}
+        variant={ButtonVariants.secondary}
         title="Sign in"
-        variant="secondary--outline"
+        onClick={() => {}}
       />
+      <Button title="Create account" onClick={() => {}} />
       <Button
-        onClick={() => {
-          console.log("clicked");
-        }}
-        title="Create account"
-      />
-      <Button
-        onClick={() => {
-          console.log("clicked");
-        }}
+        variant={ButtonVariants.transparent}
         title="For Creators"
-        variant="secondary--solid"
-        size="no-padding"
+        size={ButtonSizes.noPadding}
+        onClick={() => {}}
       />
     </div>
   );

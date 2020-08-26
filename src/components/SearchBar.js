@@ -1,6 +1,6 @@
 import React from "react";
 import SearchBox from "./SearchBox";
-import Button from "./Button";
+import Button, { ButtonVariants, ButtonSizes } from "./Button";
 import styles from "./SearchBar.module.css";
 
 const SearchBar = () => {
@@ -9,12 +9,9 @@ const SearchBar = () => {
       <SearchBox />
       <div>or</div>
       <Button
-        onClick={() => {
-          console.log("clicked");
-        }}
         title="Upload your own"
-        variant="primary--solid"
-        size="large"
+        size={ButtonSizes.large}
+        onClick={() => {}}
       />
     </div>
   );

@@ -12,7 +12,7 @@ const TrendingTrack = ({ track }) => {
   };
   return (
     <>
-      <div className={styles.cont}>
+      <div className={styles.buttonContainer}>
         <div
           className={styles.trackItem}
           onMouseEnter={handleHover}
@@ -23,19 +23,19 @@ const TrendingTrack = ({ track }) => {
 
           {hovered && (
             <>
-              <div className={styles.playButton}>
+              <div className={styles.playButton} onClick={() => {}}>
                 <img src={playButton} />
               </div>
-              <div className={styles.likeButton}>
+              <div className={styles.likeButton} onClick={() => {}}>
                 <img src={likeButton} />
               </div>
-              <div className={styles.moreButton}>
+              <div className={styles.moreButton} onClick={() => {}}>
                 <img src={moreButton} />
               </div>
             </>
           )}
         </div>
-        <div>{track.title}</div>
+        <div className={styles.title}>{track.title}</div>
         <div className={styles.user}>{track.user}</div>
       </div>
     </>

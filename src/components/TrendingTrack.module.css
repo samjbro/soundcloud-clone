@@ -7,11 +7,16 @@
 }
 .title {
   font-family: "Interstate";
-  font-size: 2.6rem;
-  color: #666;
+  font-size: 1.4rem;
+  color: #333;
   margin-bottom: 4rem;
 }
 .user {
+  font-size: 1.2rem;
+  color: #999;
+}
+.user:hover {
+  color: #666;
 }
 .playButton {
   display: flex;
@@ -25,24 +30,27 @@
   background-color: #f50;
 }
 .playButton:hover {
-  background-color: #aa3c05;
+  background-color: #f30;
 }
 .playButton img {
   margin-left: 3px;
 }
 .likeButton {
   position: absolute;
-  bottom: 2rem;
-  right: 2rem;
+  bottom: 0.6rem;
+  right: 3.4rem;
 }
 .moreButton {
   position: absolute;
-  bottom: 2rem;
-  right: 12rem;
+  bottom: 1.2rem;
+  right: 1.2rem;
 }
-.cont {
+.buttonContainer {
   width: 15%;
   height: 26rem;
   padding-bottom: 12px;
   position: relative;
+}
+.buttonContainer:hover {
+  cursor: pointer;
 }
