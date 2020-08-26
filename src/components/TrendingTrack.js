@@ -7,7 +7,7 @@ import moreButton from "../images/dots.svg";
 const TrendingTrack = ({ track }) => {
   const [hovered, setHovered] = useState(false);
 
-  const handleHover = (e) => {
+  const handleHover = () => {
     setHovered(!hovered);
   };
   return (
@@ -17,19 +17,33 @@ const TrendingTrack = ({ track }) => {
           className={styles.trackItem}
           onMouseEnter={handleHover}
           onMouseLeave={handleHover}
-          data-index={track.id}
         >
           <img src={track.cover} />
 
           {hovered && (
             <>
-              <div className={styles.playButton} onClick={() => {}}>
+              <div
+                className={styles.playButton}
+                onClick={() => {
+                  console.log("play");
+                }}
+              >
                 <img src={playButton} />
               </div>
-              <div className={styles.likeButton} onClick={() => {}}>
+              <div
+                className={styles.likeButton}
+                onClick={() => {
+                  console.log("like");
+                }}
+              >
                 <img src={likeButton} />
               </div>
-              <div className={styles.moreButton} onClick={() => {}}>
+              <div
+                className={styles.moreButton}
+                onClick={() => {
+                  console.log("more");
+                }}
+              >
                 <img src={moreButton} />
               </div>
             </>

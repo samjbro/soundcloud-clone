@@ -1,15 +1,12 @@
 import React from "react";
-import Hero from "./components/Hero";
-import SearchBar from "./components/SearchBar";
-import TrendingTracks from "./components/TrendingTracks";
+import { Router } from "@reach/router";
+import Home from "./components/Home";
 
 function App() {
   return (
-    <div className="hero__container">
-      <Hero />
-      <SearchBar />
-      <TrendingTracks />
-    </div>
+    <Router>
+      <Home path="/" />
+    </Router>
   );
 }
 

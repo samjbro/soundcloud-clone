@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "./Button";
+import Button, { ButtonSizes, ButtonVariants } from "./Button";
 import styles from "./TrendingTracks.module.css";
 import TrendingTrack from "./TrendingTrack";
 
@@ -28,12 +28,9 @@ const TrendingTracks = () => {
       </div>
       <div>
         <Button
-          onClick={() => {
-            console.log("clicked");
-          }}
           title="Explore trending playlists"
-          variant="primary--solid"
-          size="large"
+          size={ButtonSizes.large}
+          onClick={() => {}}
         />
       </div>
     </div>
