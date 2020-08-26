@@ -1,0 +1,23 @@
+.neverStopContainer {
+}
+.neverStopImg {
+}
+.creators__text {
+}
+.creators__textTitle {
+}
+.creators__textCopy {
+}
+.creators__btn {
+}
+.thanksContainer {
+  display: flex;
+}
+.thanks__title {
+  font-size: 3rem;
+}
+.thanks__copy {
+  font-size: 2rem;
+}
+.thanks__signIn {
+}

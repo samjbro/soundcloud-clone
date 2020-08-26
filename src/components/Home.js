@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "./Hero";
 import SearchBar from "./SearchBar";
 import TrendingTracks from "./TrendingTracks";
+import MiscAds from "./MiscAds";
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       <Hero />
       <SearchBar />
       <TrendingTracks />
+      <MiscAds />
     </div>
   );
 };
