@@ -1,0 +1,32 @@
+.searchBar {
+  display: flex;
+  font-size: 1.6rem;
+  margin: 4.9rem 0 1.2rem;
+  justify-content: center;
+  align-items: center;
+}
+.searchBar > * {
+  margin-left: 2rem;
+}
+
+input[type="text"] {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", "Geneva", "Verdana", sans-serif;
+  font-weight: 100;
+  background-color: #f2f2f2;
+  height: 4.6rem;
+  padding: 0 4.6rem 0 1.6rem;
+  color: #666;
+  border: none;
+  font-size: 1.6rem;
+  width: 56rem;
+}
+
+button[type="submit"] {
+  margin-left: -50px;
+  height: 4.6rem;
+  width: 5rem;
+  background-color: transparent;
+  color: #666;
+  font-size: 1.8rem;
+}
