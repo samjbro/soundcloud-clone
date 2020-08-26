@@ -1,0 +1,46 @@
+button {
+  font-size: 1.4rem;
+  font-weight: 100;
+  color: #f2f2f2;
+  border: none;
+  border-radius: 0.4rem;
+  outline: none;
+  line-height: 2.4rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", "Geneva", "Verdana", sans-serif;
+  cursor: pointer;
+}
+
+.primary {
+  background-color: #f50;
+}
+
+.secondary {
+  background-color: transparent;
+  border: 1px solid #f2f2f2;
+}
+
+.secondary:hover {
+  border-color: #fff;
+  color: #fff;
+}
+
+.transparent {
+  background-color: transparent;
+}
+
+.medium {
+  height: 3rem;
+  padding: 0.2rem 1.6rem;
+}
+
+.large {
+  height: 4.4rem;
+  padding: 0 2.6rem;
+  font-size: 1.6rem;
+}
+
+.no-padding {
+  height: 3rem;
+  padding: 0.2rem 0;
+}

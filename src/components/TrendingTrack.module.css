@@ -1,0 +1,60 @@
+.track {
+  width: 15%;
+}
+
+.trackItem {
+  position: relative;
+}
+.title {
+  font-family: "Interstate";
+  font-size: 1.4rem;
+  color: #333;
+  padding: 0.6rem 0 0.4rem;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.user {
+  font-size: 1.2rem;
+  color: #999;
+  margin-bottom: 21px;
+}
+.user:hover {
+  color: #666;
+}
+.playButton {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 34%;
+  left: 34%;
+  width: 32%;
+  height: 32%;
+  border-radius: 50%;
+  background-color: #f50;
+}
+.playButton:hover {
+  background-color: #f30;
+}
+.playButton img {
+  margin-left: 3px;
+}
+.likeButton {
+  position: absolute;
+  bottom: 0.6rem;
+  right: 3.4rem;
+}
+.moreButton {
+  position: absolute;
+  bottom: 1.2rem;
+  right: 1.2rem;
+}
+.buttonContainer {
+  width: 15%;
+  padding-bottom: 12px;
+  position: relative;
+}
+.buttonContainer:hover {
+  cursor: pointer;
+}
