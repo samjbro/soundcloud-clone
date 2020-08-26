@@ -1,19 +1,29 @@
 import React from "react";
 import styles from "./Button.module.css";
 
-const variants = ["primary--solid", "secondary--solid", "secondary--outline"];
+export const ButtonVariants = {
+  primary: "primary",
+  secondary: "secondary",
+  transparent: "transparent",
+};
 
-const sizes = ["medium", "large", "no-padding"];
+export const ButtonSizes = {
+  medium: "medium",
+  large: "large",
+  noPadding: "no-padding",
+};
 
-const Button = ({ onClick, title, variant, size }) => {
-  const checkVariant = variants.includes(variant) ? variant : variants[0];
-  const checkSize = sizes.includes(size) ? size : sizes[0];
-
+const Button = ({
+  variant = ButtonVariants.primary,
+  size = ButtonSizes.medium,
+  title,
+  onClick,
+}) => {
+  const buttonClasses = [styles.button, styles[variant], styles[size]].join(
+    " "
+  );
   return (
-    <button
-      className={`${styles[checkVariant]} ${styles[checkSize]}`}
-      onClick={onClick}
-    >
+    <button onClick={onClick} className={buttonClasses}>
       {title}
     </button>
   );
