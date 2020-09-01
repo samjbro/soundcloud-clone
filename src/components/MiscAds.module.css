@@ -30,16 +30,13 @@
 }
 .neverStop__ads img {
   padding: 3rem 6px 0 0;
-  height: 60%;
 }
 .creators {
-  display: flex;
-  flex-direction: column;
   font-family: "Interstate";
   background: no-repeat url("../images/hp_creator_image.jpg");
   color: #fff;
   height: 300px;
-  padding: 7rem 54rem 0 7rem;
+  padding: 7rem 7rem 0;
 }
 .creators__title {
   font-size: 3.4rem;
@@ -48,6 +45,7 @@
   font-size: 2.2rem;
   line-height: 3rem;
   padding: 2rem 0 2rem 0;
+  width: 40%;
 }
 .thanks__container {
   display: flex;
