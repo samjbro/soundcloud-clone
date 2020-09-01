@@ -1,4 +1,6 @@
 import React from "react";
+import styles from "./SearchBox.module.css";
+import search from "../images/search.svg";
 
 const SearchBox = () => {
   return (
@@ -8,7 +10,7 @@ const SearchBox = () => {
         placeholder="Search for artists, bands, tracks, podcasts"
       />
       <button type="submit">
-        <i class="fa fa-search"></i>
+        <img src={search} className={styles.icon} />
       </button>
     </form>
   );

@@ -7,44 +7,47 @@ import moreButton from "../images/dots.svg";
 const TrendingTrack = ({ track }) => {
   const [hovered, setHovered] = useState(false);
 
-  const handleHover = () => {
-    setHovered(!hovered);
+  const handleHover = (e) => {
+    e.type === "mouseenter" ? setHovered(true) : setHovered(false);
   };
   return (
     <>
-      <div className={styles.buttonContainer}>
+      <div className={styles.trackContainer}>
         <div
           className={styles.trackItem}
           onMouseEnter={handleHover}
           onMouseLeave={handleHover}
+          onClick={() => {
+            console.log("image");
+          }}
         >
           <img src={track.cover} />
-
           {hovered && (
             <>
               <div
                 className={styles.playButton}
-                onClick={() => {
+                onClick={(e) => {
+                  e.stopPropagation();
                   console.log("play");
                 }}
               >
                 <img src={playButton} />
               </div>
-              <div
-                className={styles.likeButton}
-                onClick={() => {
-                  console.log("like");
-                }}
-              >
-                <img src={likeButton} />
-              </div>
-              <div
-                className={styles.moreButton}
-                onClick={() => {
-                  console.log("more");
-                }}
-              >
-                <img src={moreButton} />
+              <div className={styles.likeButton}>
+                <img
+                  src={likeButton}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    console.log("like");
+                  }}
+                />
+                <img
+                  src={moreButton}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    console.log("more");
+                  }}
+                />
               </div>
             </>
           )}

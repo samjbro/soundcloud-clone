@@ -1,13 +1,13 @@
 import React from "react";
-import Logo from "./Logo";
 import SignIn from "./SignIn";
 import styles from "./Hero.module.css";
+import HeroCopy from "./HeroCopy";
 
 const Hero = () => {
   return (
     <div className={styles.hero}>
-      <Logo />
       <SignIn />
+      <HeroCopy />
     </div>
   );
 };

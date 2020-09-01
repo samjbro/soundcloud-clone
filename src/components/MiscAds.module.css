@@ -1,12 +1,39 @@
-.neverStopContainer {
+.neverstop__container {
+  display: flex;
+  font-family: "Interstate";
 }
-.neverStopImg {
+.neverStop__image {
+  padding: 2rem;
 }
-.creators__text {
+.neverStop__textcontainer {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
 }
-.creators__textTitle {
+.neverStop__title {
+  font-size: 3rem;
+  background: no-repeat url("../images/hp_creator_image.jpg");
 }
-.creators__textCopy {
+.neverStop__copy {
+  font-size: 2rem;
+}
+.neverStop__ads {
+  display: flex;
+}
+.creators {
+  display: flex;
+  flex-direction: column;
+  font-family: "Interstate";
+  background: no-repeat url("../images/hp_creator_image.jpg");
+  color: #fff;
+}
+.creators__title {
+  font-size: 3rem;
+  width: 40%;
+}
+.creators__copy {
+  font-size: 2rem;
+  width: 40%;
 }
 .creators__btn {
 }
