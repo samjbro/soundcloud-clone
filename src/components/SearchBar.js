@@ -1,6 +1,6 @@
 import React from "react";
 import SearchBox from "./SearchBox";
-import Button, { ButtonVariants, ButtonSizes } from "./Button";
+import Button, { ButtonSizes } from "./Button";
 import styles from "./SearchBar.module.css";
 
 const SearchBar = () => {

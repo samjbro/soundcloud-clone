@@ -15,7 +15,8 @@ const MiscAds = () => {
         </div>
         <div className={styles.neverStop__textcontainer}>
           <div className={styles.neverStop__title}>Never stop listening</div>
-          <div className={styles.neverStopGradient}></div>
+
+          <div className={styles.neverStop__gradient}></div>
           <div className={styles.neverStop__copy}>
             SoundCloud is available on Web, iOS, Android, Sonos, Chromecast, and
             Xbox One.
@@ -34,27 +35,27 @@ const MiscAds = () => {
           your audience. What are you waiting for?
         </div>
         <Button
+          variant={ButtonVariants.secondary}
           title="Find out more"
-          size={ButtonSizes.large}
           onClick={() => {}}
         />
       </div>
-      <div className={styles.thanksContainer}>
-        <div className={styles.thanks__title}></div>
-        <div className={styles.thanks__copy}></div>
+      <div className={styles.thanks__container}>
+        <div className={styles.thanks__title}>
+          Thanks for listening. Now join in.
+        </div>
+        <div className={styles.thanks__copy}>
+          Save tracks, follow artists and build playlists.All for free
+        </div>
         <Button
           title="Create account"
           size={ButtonSizes.large}
           onClick={() => {}}
         />
-        <div className={styles.thanks__signIn}>
-          <div>Already have an account?</div>
-          <Button
-            title="Sign in"
-            size={ButtonSizes.medium}
-            onClick={() => {}}
-          />
-        </div>
+      </div>
+      <div className={styles.thanks__signin}>
+        <div>Already have an account? &emsp;</div>
+        <Button title="Sign in" size={ButtonSizes.medium} onClick={() => {}} />
       </div>
     </>
   );

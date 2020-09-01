@@ -1,24 +1,36 @@
 .neverstop__container {
   display: flex;
   font-family: "Interstate";
+  margin-top: 7rem;
 }
 .neverStop__image {
-  padding: 2rem;
+  padding: 2rem 5rem 0;
 }
 .neverStop__textcontainer {
   display: flex;
   flex-direction: column;
   width: 30%;
+  padding-top: 7rem;
 }
 .neverStop__title {
-  font-size: 3rem;
-  background: no-repeat url("../images/hp_creator_image.jpg");
+  font-size: 3.6rem;
+}
+.neverStop__gradient {
+  margin: 1.6rem 0 2rem;
+  height: 3px;
+  width: 18%;
+  background: linear-gradient(90deg, #7d01a1, #f30 50%, #f50);
 }
 .neverStop__copy {
-  font-size: 2rem;
+  font-size: 2.6rem;
+  line-height: 3.4rem;
 }
 .neverStop__ads {
   display: flex;
+}
+.neverStop__ads img {
+  padding: 3rem 6px 0 0;
+  height: 60%;
 }
 .creators {
   display: flex;
@@ -26,25 +38,36 @@
   font-family: "Interstate";
   background: no-repeat url("../images/hp_creator_image.jpg");
   color: #fff;
+  height: 300px;
+  padding: 7rem 54rem 0 7rem;
 }
 .creators__title {
-  font-size: 3rem;
-  width: 40%;
+  font-size: 3.4rem;
 }
 .creators__copy {
-  font-size: 2rem;
-  width: 40%;
+  font-size: 2.2rem;
+  line-height: 3rem;
+  padding: 2rem 0 2rem 0;
 }
-.creators__btn {
-}
-.thanksContainer {
+.thanks__container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Interstate";
+  margin-top: 5rem;
 }
 .thanks__title {
-  font-size: 3rem;
+  font-size: 3.4rem;
 }
 .thanks__copy {
-  font-size: 2rem;
+  font-size: 2.4rem;
+  padding: 2.6rem 0 3rem;
 }
-.thanks__signIn {
+.thanks__signin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  padding: 3rem 0;
+  font-family: "Interstate";
 }

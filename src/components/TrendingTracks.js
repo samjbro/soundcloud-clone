@@ -2,9 +2,10 @@ import React from "react";
 import Button, { ButtonSizes, ButtonVariants } from "./Button";
 import styles from "./TrendingTracks.module.css";
 import TrendingTrack from "./TrendingTrack";
+import wap from "../images/wap.jpg";
 
 const data = {
-  cover: "/images/trending.jpg",
+  cover: wap,
   title: "WAP feat. Megan Thee Stallion",
   user: "Cardi B",
 };
