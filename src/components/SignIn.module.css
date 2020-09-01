@@ -1,0 +1,20 @@
+.signIn {
+  display: flex;
+  justify-content: space-between;
+  width: 32rem;
+}
+
+.topSection {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 2.2rem 3.4rem;
+}
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+.logoText img {
+  height: 2.2rem;
+  padding-left: 4px;
+}
