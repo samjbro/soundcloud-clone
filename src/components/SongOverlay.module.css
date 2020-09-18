@@ -1,0 +1,40 @@
+.playButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+  height: 35%;
+  border-radius: 50%;
+  background-color: #f50;
+  cursor: pointer;
+}
+.playButton img{
+  height: 70%;
+  padding-left: 6px;
+  
+}
+.playButton:hover {
+  background-color: #f30;
+}
+
+.imageButtons {
+  display: flex;
+  position: absolute;
+  bottom:12px;
+  right: 14px;
+}
+
+.imageButtons img{
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.songButtons{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}

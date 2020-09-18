@@ -1,7 +1,7 @@
 import React from "react";
-import Button, { ButtonSizes, ButtonVariants } from "./Button";
+import Button, { ButtonSizes } from "./Button";
 import styles from "./TrendingTracks.module.css";
-import TrendingTrack from "./TrendingTrack";
+import SongThumbnail from "./SongThumbnail";
 
 const data = {
   cover: "/images/trending.jpg",
@@ -23,7 +23,7 @@ const TrendingTracks = () => {
       </div>
       <div className={styles.trackList}>
         {arr.map((track) => (
-          <TrendingTrack key={track.id} track={track} />
+          <SongThumbnail key={track.id} track={track} />
         ))}
       </div>
       <div>

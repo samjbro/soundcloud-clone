@@ -48,33 +48,3 @@
 .user:hover {
   color: #333;
 }
-.playButton {
-  display: flex;
-  position: absolute;
-  width: 20%;
-  height: 20%;
-  border-radius: 50%;
-  background-color: #f50;
-  padding: 1.1rem 0.9rem 1.1rem 1.3rem;
-  cursor: pointer;
-}
-.playButton:hover {
-  background-color: #f30;
-}
-
-.likeButton {
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  bottom: 0.6rem;
-  right: 1.4rem;
-}
-.likeButton img {
-  margin-left: 0.9rem;
-  cursor: pointer;
-}
-.moreButton {
-  position: absolute;
-  bottom: 1.2rem;
-  right: 1.2rem;
-}

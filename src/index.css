@@ -42,8 +42,6 @@ a {
   margin: auto;
   display: flexbox;
   position: relative;
-  background-color: #fff;
-  height: 130vmin;
   border-top: solid 4px #f50;
 }
 @media screen and (max-width: 1079px) {

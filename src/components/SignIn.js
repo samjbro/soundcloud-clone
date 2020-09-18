@@ -9,10 +9,10 @@ const SignIn = () => {
     <div className={styles.topSection}>
       <div className={styles.logoContainer}>
         <div className={styles.logoCloud}>
-          <img src={cloud} />
+          <img src={cloud} alt="cloud logo" />
         </div>
         <div className={styles.logoText}>
-          <img src={textLogo} />
+          <img src={textLogo} alt="text logo" />
         </div>
       </div>
       <div className={styles.signIn}>
